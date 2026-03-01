@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brawlers</title>
+    
+</head>
+<body>
+
+    <div class="container">
+        <header class="box">
+            <h1>Brawlers</h1>
+            <p>Alguns personagens do jogo!</p>
+        </header>
+
+        <nav class="box">
+            <a href="index.html">Inicio</a>
+            <a href="brawlers.html">Brawlers</a>
+            <a href="#">Modos de Jogo</a>
+            <a href="#">Clubes</a>
+            <a href="#">Dicas</a>
+        </nav>
+
+        <aside class="box">
+            <h3>Nomes dos brawlers</h3>
+            <p><strong>Shelly</strong></p>
+            <p><strong>Spike</strong></p>
+            <p><strong>Wattson(Surge)</strong></p>
+        </aside>
+
+        <main class="box">
+            <h2>Descrição dos brawlers:</h2>
+            <img src="src/shelly.webp" width="200">
+            <p>A <strong>Shelly</strong> é uma Brawler do tipo “Destruidor” e é uma Brawler Inicial, visto que ela é desbloqueada no início do jogo. Ela tem vida moderada e tem uma carabina tende a causar mais dano quanto mais perto ela estiver de seu alvo, tornando-a uma excelente para combates de curto a médio alcance. Seus ataques também se espalham. Seu Super permite que ela elimine muitos obstáculos e elimine os Brawlers inimigos.</p>
+            <br>
+            <img src="src/spike.webp" width="200">
+            <p>O <strong>Spike</strong> é um Brawler do tipo “Destruidor” e é de raridade Lendária. Ele tem com pouca vida e especializado em lidar com inimigos agrupados. Seu Ataque e Super são ótimos para lidar com vários inimigos de uma só vez.</p>
+            <br>
+            <img src="src/surge.webp" width="200">
+            <p>O <strong>Wattson(Surge)</strong> é um brawler do tipo “Destruidor” e de raridade Lendária. Ele tem uma baixa quantidade de vida e causa dano moderado, mas conforme você usar a sua super habilidade, poderá evoluí-lo para outro estágio, ganhando vantagens e melhorias, até o nível 4 durante a partida.
+
+</p>
+
+        </main>
+
+        <aside class="box">
+            <h3>Classes</h3>
+            <ul>
+                <li>Detonador</li>
+                <li>Tiro Preciso</li>
+                <li>Algoz</li>
+                <li>Suporte</li>
+                <li>Tanque</li>
+                <li>Controle</li>
+            </ul>
+            <br>
+            <h3>Raridades</h3>
+            <ul>
+                <li>Brawler inicial</li>
+                <li>Raro</li>
+                <li>Super raro</li>
+                <li>Épico</li>
+                <li>Mítico</li>
+                <li>Lendário</li>
+                <li>Ultra Lendário</li>
+            </ul>
+        </aside>
+
+        <footer class="box">
+            <p>&copy; 2026 - Gustavo de Souza Weschenfelder</p>
+        </footer>
+    </div>
+
+</body>
+<style>
+        /* Estilos gerais do corpo da página */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f4f8; /* Fundo levemente azulado */
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Container principal com CSS Grid */
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: grid;
+            /* Define 3 colunas: Laterais menores (1fr) e a do meio maior (3fr) */
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-gap: 15px; 
+        }
+
+        /* Estilo comum para as caixas do layout */
+        .box {
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 6px;
+            color: #2b3a4a;
+        }
+
+        /* Elementos que ocupam toda a largura (Header, Nav e Footer) */
+        header, nav, footer {
+            grid-column: 1 / -1; 
+            text-align: center;
+        }
+
+        /* Ajustes específicos do Header (Tema Brawl Stars) */
+        header {
+            background-color: #ffcc00; /* Amarelo Brawl Stars */
+            color: #1a1a1a;
+        }
+
+        header h1 {
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 900;
+        }
+
+        /* Menu de Navegação */
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0055ff; /* Azul Brawl Stars */
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+            text-decoration: underline;
+        }
+
+        h2, h3 {
+            margin-top: 0;
+            border-bottom: 3px solid #0055ff;
+            padding-bottom: 5px;
+            color: #1a1a1a;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 0;
+        }
+
+        /* Responsividade: transforma em 1 coluna em celulares */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</html>

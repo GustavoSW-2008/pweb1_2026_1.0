@@ -1,38 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SaBOOR Energético </title>
+    <title>Brawl Stars</title>
+    
 </head>
 <body>
-    <header>
-        <h1>adadaf</h1>
-    </header>
-    <nav>
-        <a></a>
 
-    </nav>
-    <main>
-        <aside> Conteudo 1</aside>
-        <div> Conteudo Central</div>
-        <aside> Conteudo 1</aside>
-    </main>
-    <table>
-        <tr>
-        <th> Matricula 1 </th>
-        <td> Matricula 2</td>
-    </table>
-    <a href="http://www.google.com" target="_blank">google</a>
-    <video controls>
-        <source src="video.mp4" type="video/mp4">
-    </video>
-    <audio controls>
-        <source src="audio.mp3" type="audio/mpeg">
-    </audio>
-    <p></p>
-    <audio controls>
-        <source src="67.mp3" type="audio/mpeg">
-    </audio>
+    <div class="container">
+        <header class="box">
+            <h1>Brawl Stars</h1>
+            <p>Batalhas épicas e muita ação multiplayer!</p>
+        </header>
+
+        <nav class="box">
+            <a href="index.html">Inicio</a>
+            <a href="brawlers.html">Brawlers</a>
+            <a href="#">Modos de Jogo</a>
+            <a href="#">Clubes</a>
+            <a href="#">Dicas</a>
+        </nav>
+
+        <aside class="box">
+            <h3>Ficha Técnica</h3>
+            <p><strong>Desenvolvedora:</strong> Supercell</p>
+            <p><strong>Lançamento:</strong> 2018</p>
+            <p><strong>Plataformas:</strong> Android, iOS</p>
+            <p><strong>Tamanho:</strong> 3,5GB</p>
+            <p><strong>jogadores ativos mensalmente:</strong> Aprox. 18,7 milhões</p>
+        </aside>
+
+        <main class="box">
+            <h2>Sobre o Jogo</h2>
+            <p><strong>Brawl Stars</strong> é um jogo de combate multiplayer rápido, feito sob medida para dispositivos móveis. Os jogadores escolhem personagens chamados <em>Brawlers</em>, cada um com ataques básicos, habilidades passivas e um "Super" ataque exclusivo, para batalhar em diversas arenas.</p>
+            <p>O jogo se destaca por oferecer partidas curtas (geralmente de 2 a 3 minutos) e uma grande variedade de modos de jogo, como o Pique-Gema (3v3), Combate (Battle Royale solo ou em dupla), Fute-Brawl e muitos outros. O objetivo constante é desbloquear e melhorar seus Brawlers para subir no Caminho de Troféus.</p>
+            <p>Animação de lancamento do jogo:</p>
+            <video controls>
+                <source src="src/bsvideo.mp4" type="video/mp4">
+            </video>
+        </main>
+
+        <aside class="box">
+            <h3>Modos de jogo</h3>
+            <ul>
+                <li>Fute-Brawl</li>
+                <li>Combate solitario</li>
+                <li>Pique-Gema</li>
+                <li>Caça-Estrelas</li>
+                <li>Nocaute</li>
+                <li>Roubo</li>
+                <li>Zona Estrategica</li>
+                <li>Entre outros...</li>
+            </ul>
+        </aside>
+
+        <footer class="box">
+            <p>&copy; 2026-Gustavo de Souza Weschenfelder</p>
+        </footer>
+    </div>
+
 </body>
+<style>
+        /* Estilos gerais do corpo da página */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f4f8; /* Fundo levemente azulado */
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Container principal com CSS Grid */
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: grid;
+            /* Define 3 colunas: Laterais menores (1fr) e a do meio maior (3fr) */
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-gap: 15px; 
+        }
+
+        /* Estilo comum para as caixas do layout */
+        .box {
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 6px;
+            color: #2b3a4a;
+        }
+
+        /* Elementos que ocupam toda a largura (Header, Nav e Footer) */
+        header, nav, footer {
+            grid-column: 1 / -1; 
+            text-align: center;
+        }
+
+        /* Ajustes específicos do Header (Tema Brawl Stars) */
+        header {
+            background-color: #ffcc00; /* Amarelo Brawl Stars */
+            color: #1a1a1a;
+        }
+
+        header h1 {
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 900;
+        }
+
+        /* Menu de Navegação */
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0055ff; /* Azul Brawl Stars */
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+            text-decoration: underline;
+        }
+
+        h2, h3 {
+            margin-top: 0;
+            border-bottom: 3px solid #0055ff;
+            padding-bottom: 5px;
+            color: #1a1a1a;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 0;
+        }
+
+        /* Responsividade: transforma em 1 coluna em celulares */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </html>
