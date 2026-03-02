@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/action_page.html">
+        <fieldset>
+            <legend><h3>Sistema de Gestão Acadêmica</h3></legend>
+            <h3> <b>Manutenção de Usuários do Sistema Interno</b></h3>
+            <label for=“login">Login:</label><br>
+                <input type="text" id="pnome" name="pnome"><br>
+                <label for="senha">Senha:</label><br>
+                <input type="text" id="unome" name="unome"><br><br>
+            
+            <label for="Turno">Status:</label><br>
+                <select name="Turno" id="Turno">
+                <option value="inativo">Inativo</option>
+                <option value=“ativo">Ativo</option>
+                <option value="pendente">Pendente</option>
+            </select><br><br>
+
+            <p>Tipo:</p>
+            <input type="radio" id="tecnico" name="tipo" value="tecnico">
+                <label for="tecnico">Técnico</label>
+                <input type="radio" id="professor" name="tipo" value="professor">
+                <label for="professor">Professor</label>
+                <input type="radio" id="aluno" name="tipo" value="aluno">
+                <label for="aluno">Aluno</label><br><br>
+
+            <label for="data">Data de Criação:</label><br>
+                <input type="date" id="data" name="data">
+
+            <p>Perfil:</p>
+            <input type="radio" id="convidado" name="perfil" value="convidado">
+                <label for="convidado">Convidado</label>
+                <input type="radio" id="administrador" name="perfil" value="administrador">
+                <label for="administrador">Administrador</label><br><br>
+            
+            <label for="exemplo01">Observações:</label><br>
+            <textarea id="exemplo01" name="exemplo01" rows="4" cols="50"></textarea>
+
+            <p>Módulos:</p> 
+                <input type="checkbox" id="modulo1" name="modulo1" value="compras">
+                <label for="modulo1"> Compras</label>
+                <input type="checkbox" id="modulo2" name="modulo2" value="biblioteca">
+                <label for="modulo2"> Biblioteca</label>
+                <input type="checkbox" id="modulo3" name="modulo3" value="academico">
+                <label for="modulo3"> Acadêmico</label><br>
+                <input type="checkbox" id="modulo4" name="modulo4" value="documentacao">
+                <label for="modulo4"> Documentação</label>
+                <input type="checkbox" id="modulo5" name="modulo5" value="recursosHumanos">
+                <label for="modulo5 "> Recursos Humanos</label><br><br>
+
+            <button>Salvar</button>
+            <button>Excluir</button>
+
+        </fieldset>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/action_page.html">
+        <fieldset>
+            <legend><h2>Formulario Exercicio de Matricula de Curso</h2></legend>
+            
+                <label for=“pnome">Primeiro nome:</label><br>
+                <input type="text" id="pnome" name="pnome"><br>
+                <label for=“unome">Sobrenome:</label><br>
+                <input type="text" id="unome" name="unome">
+            
+            <p>Curso:</p>
+            
+                <input type="radio" id="Técnico em informática" name="curso" value="Técnico em informática">
+                <label for="Técnico em informática">Técnico em informática</label><br>
+                <input type="radio" id="Graduação - Análise e Desenvolvimento de Sistemas" name="curso" value="Graduação - Análise e Desenvolvimento de Sistemas">
+                <label for="Graduação - Análise e Desenvolvimento de Sistemas ">Graduação - Análise e Desenvolvimento de Sistemas</label><br>
+                <input type="radio" id="Profissionalizante - Programação Web" name="curso" value="Profissionalizante - Programação Web">
+                <label for="Profissionalizante - Programação Web">Profissionalizante - Programação Web</label>
+            
+            <p>Linguagem de Programação de sua prefêrencia:</p>
+            
+                <input type="checkbox" id="linguagem1" name="linguagem1" value="PHP">
+                <label for="linguagem1"> PHP</label><br>
+                <input type="checkbox" id="linguagem2" name="linguagem2" value="Java">
+                <label for="linguagem2"> Java</label><br>
+                <input type="checkbox" id="linguagem3" name="linguagem3" value="Python">
+                <label for="linguagem3"> Python</label>
+            <br>
+            <label for="Turno">Escolha um turno:</label><br>
+                <select name="Turno" id="Turno">
+                <option value="Manhã">Manhã</option>
+                <option value=“Tarde">Tarde</option>
+                <option value="Noite">Noite</option>
+            </select><br><br>
+            <label for="unidade"> Escolha uma unidade mais próxima a você:</label><br>
+                <input list="unidades" name="unidade" id="unidade">
+                <datalist id="unidades">
+                <option value="Efapi">
+                <option value="Centro">
+                <option value="Seminário">
+                <option value="Santo Antônio">
+                <option value="Safari">
+            </datalist><br><br>
+            <button>Enviar</button>
+        </fieldset>
+    </form>
+    
+    
+</body>
+</html>
