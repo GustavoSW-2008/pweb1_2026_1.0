@@ -4,21 +4,216 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   </head>
   <body>
     <div class="container">
         <header class="blog-header"> 
-            <div class="row">
-                <div class="col-4"> Se inscreva</div>
-                <div class="col-4"> Oeste News</div>
-                <div class="col-4"> </div>
-
+            <div class="row d-flex justify-content align-itens-center">
+                <div class="col-4"> 
+                  <a class="link-secondary" href="#">Se inscreva</a>
                 </div>
+                <div class="col-4"> 
+                  <a class="link-secondary" href="#">Oeste News</a>
+                </div>
+                <div class="col-4"> 
+                  <a class="link-secondary" href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                  <a class="btn btn-sm btn-outline-secondary" href="#">Cadastrar-se</a>
+                </div> 
             </div>
         </header>
-        <main> </main>
-        <footer> </footer>
+        <div class="nav-scroller py-1 mb-2">
+          <nav class="nav flex justify-content-between">
+            <a class="link-secondary" href="#">Mundo</a>
+            <a class="link-secondary" href="#">Bresil</a>
+            <a class="link-secondary" href="#">Tecnologia</a>
+            <a class="link-secondary" href="#">Design</a>
+            <a class="link-secondary" href="#">Cultura</a>
+            <a class="link-secondary" href="#">Negócios</a>
+            <a class="link-secondary" href="#">Política</a>
+            <a class="link-secondary" href="#">Opiniões</a>
+            <a class="link-secondary" href="#">Ciência</a>
+            <a class="link-secondary" href="#">Saúde</a>
+            <a class="link-secondary" href="#">Viagem</a>
+          </nav>
+        </div>
+        <main class="container">
+          <div class="bg-dark text-white p-4 mb-4 rounded">
+            <h1 class="display-5 fst-italic">Titulo de uma postagem</h1>
+            <p class="lead">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi blanditiis placeat architecto molestiae aliquam incidunt illum deserunt assumenda labore neque obcaecati velit minima aliquid voluptas iste necessitatibus suscipit, aspernatur atque?
+            </p>
+            <p class="lead">
+              <a class="text-white fw-bold text-decoration-none" href="#"
+              >Continue lendo...
+
+              </a>
+            </p>
+          </div>
+          <!--INICIO CARD-->
+          <div class="row">
+            <div class="col">
+            <!-- INICIO CARD 01 -->
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <span class="badge text-bg-primary">Mundo</span>
+                      <h5 class="card-title">Canada o segundo maior país do mundo</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <a class="link-secondary" href="#">Continue lendo...</a>
+                      <p class="card-text"><small class="text-body-secondary">Ultima atualização 3 mins 30/03/2026</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="https://picsum.photos/200/300?random=1" class="img-fluid rounded" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIM CARD 01 -->
+            <div class="col">
+              <!-- INICIO CARD 02 -->
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <span class="badge text-bg-success">Esporte</span>
+                      <h5 class="card-title">Chapecoense ganha a série A o maior time do mundo</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <a class="link-secondary" href="#">Continue lendo...</a>
+                      <p class="card-text"><small class="text-body-secondary">Ultima atualização 3 mins 30/03/2026</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="https://picsum.photos/200/300?random=2" class="img-fluid rounded" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIM CARD 02 -->
+           <!--FIM CARD-->
+           <div class="row">
+            <!--INICIO CORPO POSTAGEM-->
+            <div class="col-8">
+              <h1 class="pb-4 mb-2 fst-italic border-bottom"> Chapecó e Região</h1>
+              <article class="blog-post">
+                <h2 class="blog-post-titulo">Postagem exemplo 01</h2>
+                <p class="blog-post-meta">Março 30,2026 <a href="#"> Gustavo</a></p>
+                <p class="justify-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti ratione eos error incidunt. Nemo quisquam blanditiis quas! Illo unde natus quam corporis magni ullam voluptatum consequatur accusantium, porro nam blanditiis.</p>
+                <p class="justify-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque incidunt neque, nisi nemo quae aspernatur, illum ipsum temporibus veniam doloremque modi perferendis, dolore est expedita velit distinctio? Consectetur, ratione obcaecati.</p>
+                <p class="justify-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti quaerat hic soluta labore quo, quam facilis similique in asperiores consequatur laudantium. Iure quis distinctio repellat necessitatibus tenetur vero rem laboriosam!</p>
+              </article>
+
+              <h1 class="pb-4 mb-2 fst-italic border-bottom py-5"> Chapecó e Região</h1>
+              <article class="blog-post">
+                <h2 class="blog-post-titulo">Postagem exemplo 02</h2>
+                <p class="blog-post-meta">Março 30,2026 <a href="#"> Rick</a></p>
+                <p class="justify-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti ratione eos error incidunt. Nemo quisquam blanditiis quas! Illo unde natus quam corporis magni ullam voluptatum consequatur accusantium, porro nam blanditiis.</p>
+                <p class="justify-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque incidunt neque, nisi nemo quae aspernatur, illum ipsum temporibus veniam doloremque modi perferendis, dolore est expedita velit distinctio? Consectetur, ratione obcaecati.</p>
+                <p class="justify-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti quaerat hic soluta labore quo, quam facilis similique in asperiores consequatur laudantium. Iure quis distinctio repellat necessitatibus tenetur vero rem laboriosam!</p>
+                <table class="table table-striped table-houver">
+                  <thead>
+                    <tr class="table-active">
+                      <th scope="col">#</th>
+                      <th scope="col">First</th>
+                      <th scope="col">Last</th>
+                      <th scope="col">Handle</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>@social</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </article>
+
+              <h1 class="pb-4 mb-2 fst-italic border-bottom py-5"> Chapecó e Região</h1>
+              <article class="blog-post">
+                <h2 class="blog-post-titulo">Postagem exemplo 03</h2>
+                <p class="blog-post-meta">Março 30,2026 <a href="#"> Morty</a></p>
+                <p class="justify-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti ratione eos error incidunt. Nemo quisquam blanditiis quas! Illo unde natus quam corporis magni ullam voluptatum consequatur accusantium, porro nam blanditiis.</p>
+                <p class="justify-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque incidunt neque, nisi nemo quae aspernatur, illum ipsum temporibus veniam doloremque modi perferendis, dolore est expedita velit distinctio? Consectetur, ratione obcaecati.</p>
+                <p class="justify-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti quaerat hic soluta labore quo, quam facilis similique in asperiores consequatur laudantium. Iure quis distinctio repellat necessitatibus tenetur vero rem laboriosam!</p>
+                <ul>
+                  <li>Primeiro item da lista</li>
+                  <li>Segundo item da lista</li>
+                  <li>Terceiro item da lista</li>
+                </ul>
+              </article>
+
+              <nav class="blog-paginacao">
+                <a class="btn btn-outline-primary" href="#"> Anterior</a>
+                <a class="btn btn-outline-secondary" href="#"> Proximo</a>
+              </nav>
+            </div>
+           </div>
+           <!--FIM CORPO POSTAGEM-->
+
+           <!--INICIO MENU LATERAL DIREITO-->
+           <div class="col-4">
+            <div class="position-sticky pt-4" style="top: 2rem;">
+              <div class="bg-light rounded p-4 mb-4">
+                <h4 class="fst-italic ">Sobre</h4>
+                <p class="mb-0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequatur, aperiam ullam rem pariatur illo magni dolores dolorum dicta architecto, numquam veniam laboriosam amet, blanditiis temporibus. Ad velit dolorem quod!
+                </p>
+              </div>
+
+              <div class="p-4">
+                <h4 class="fst-italic rounded p-4 mb-4">Arquivos</h4>
+                <ul class="list-unstyled mb-0">
+                  <li><a href="#">Março 2026 </a></li>
+                  <li><a href="#">Março 2026 </a></li>
+                  <li><a href="#">Março 2026 </a></li>
+                  <li><a href="#">Março 2026 </a></li>
+                  <li><a href="#">Março 2026 </a></li>
+                  <li><a href="#">Março 2026 </a></li>
+                </ul>
+              </div>
+
+              <div class="p-4">
+                <h4 class="fst-italic">Arquivos</h4>
+                <ul class="list-unstyled mb-0">
+                  <li><a href="#"><i class="fa-brands fa-instagram"></i>Instagram </a></li>
+                  <li><a href="#"><i class="fa-brands fa-facebook"></i>Facebook </a></li>
+                  <li><a href="#"><i class="fa-brands fa-github"></i>Github </a></li>
+                </ul>
+              </div>
+            </div>
+           <!--FIM MENU LATERAL DIREITO-->
+           </div>
+        </main>
+        <footer class="blog-footer mt-4 py-4" style="
+        padding: 3.5am;
+        color: #727272;
+        background-color:#f9f9f9
+        text-align: center;
+        border-top: 0.lrem solid;
+        ">
+          <p>Todos os direitos reservados <a href="#0">Oeste News</a> por <a>@OesteNews</a></p>
+          <p><a href="#">Voltar ao topo</a></p>
+
+        </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
