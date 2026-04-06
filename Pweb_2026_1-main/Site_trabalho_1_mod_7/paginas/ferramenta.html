@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Itens</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+        <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="../img/Wiki.webp" alt="Logo" width="50" height="50">
+                Wiki minecraft
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="bloco.html" class="nav-link">Blocos</a></li>
+                    <li><a href="ferramenta.html" class="nav-link">Ferramentas</a></li>
+                    <li><a href="estruturas.html" class="nav-link">Estruturas</a></li>
+                    <li><a href="bioma.html" class="nav-link">Biomas</a></li>
+                    <li><a href="formulario.html" class="nav-link">Formulário</a></li>
+                    <li><a href="sobre.html" class="nav-link">Curiosidades</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        </header>
+        <main class="container-fluid"> 
+            <div class="row">
+                <aside class="col-2">
+                    <div class="card text-align: left;">
+                        <div class="card-body">
+                            <h5 class="card-title">Conteúdo</h5>
+                            <p class="card-text">
+                                <ol>
+                                    <li><a href="#item">Item</a></li>
+                                    <li><a href="#comportamento">Comportamento</a></li>
+                                    <li><a href="#listaItens">Listas de itens</a></li>
+                                    <li><a href="#notas">Notas</a></li>
+                                </ol>
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+
+        <section id="item" class="py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-11">
+                    <h2 class="text-success">Item</h2>
+                    <p>
+                        Um item é um objeto que pode existir dentro inventários de jogadores, multidões, ou suportes de armadura; em vários blocos de armazenamento (como peitos ou conta-gotas), bem como em quadros de itens, molduras de itens brilhantes, e prateleiras.
+                    </p>
+                </div>
+                <div class="col-1">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../img/Search_Items.png" class="card-img-top" alt="Coral a Noite">
+                        <div class="card-body">
+                            <p class="card-text">O inventário criativo em Edição Java, repleto de uma grande variedade de itens.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section id="comportamento" class="py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-11">
+                    <h2 class="text-success">Comportamento</h2>
+                    <p>
+                        Alguns itens quando usado, coloque um bloquear (ItemBlock) ou entidade (carrinho de mina, ovos de desova, etc.) versão de si mesmos no mundo do jogo. Simplificando, eles são um item quando estão no inventário, e um bloco quando colocado. Por exemplo, barcos transformar-se em uma entidade quando colocado, e camas transformar-se em um grupo de blocos quando colocados. Quando selecionado no barra de aquecimento, os itens exibem brevemente seus nomes acima do HUD.
+                    </p>
+                    <p>
+                        O único método pelo qual um item pode ser exibido corretamente no ambiente do jogo é colocá-lo em um quadro de item, prateleira, ou suporte de armadura. Os itens exibidos, seja nesses blocos, na mão (terceira e primeira pessoa) ou lançados, são renderizados no jogo com conjuntos de texturas MERS com Visuais vibrantes, e pode mostrar sombras, reflexos ou cáusticos. Vários itens têm iluminação emissiva e brilham no escuro.
+                    </p>
+                    <h4 class="text-success">
+                        Itens jogados                    
+                    </h4>
+                    <p>
+                        Se um item que não se torna um bloco for descartado, ele se tornará um entidade representado por um sprite que flutua acima do solo. Permanece por 5 minutos em um ambiente carregado pedaço antes de despenhar (exceto para o Estrela inferior), a menos que o jogador passe por cima dele para pegá-lo, ele é pego por uma multidão, funil ou carrinho de mina com funil, ou é destruído por fogo, lava, cacto, explosão, vazio, ou . /kill
+                    </p>
+                    <p>
+                        Derrubado netherita os itens não podem ser destruídos pelo fogo ou pela lava e derrubados Estrelas inferiores não pode ser destruído por explosões.
+                    </p>
+                    <p>
+                        Um objeto submerso sobe em direção à superfície da água. Se a água estiver fluindo, o objeto será empurrado junto com ela.
+                    </p>
+                    <p>
+                        Os funis atraem quaisquer itens que sejam colocados acima deles, caso não sejam alimentado por redstone.
+                    </p>
+                    <h4 class="text-success">
+                        Empilhamento                    
+                    </h4>
+                    <p>Os itens podem empilhar até 64 ou 16, ou não empilhar:</p>
+                    <ul>
+                        <li>A maioria dos itens pode ser empilhada até 64. Isso inclui tudo completo blocos, cujo contornos ocupar um bloco inteiro quando colocado.</li>
+                        <li>Alguns itens, como bolas de neve, vazio baldes, ovos, sinais, e pérolas ender, pode acumular até um máximo de 16.</li>
+                        <li>Alguns outros itens não são empilhados, como qualquer coisa com um durabilidade (armas, armadura, e ferramentas), preenchido baldes, e poções.</li>
+                        <li>Todos os itens podem tecnicamente ser forçados a empilhar até 99 ou 127 usando comandos.</li>
+                    </ul>
+                </div>
+        </div>
+        </section>
+
+        <section id="listaItens" class="py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-success">Lista de Itens</h2>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 class="text-success">Itens que criam blocos, fluidos ou entidades</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item"><img src="../img/Bottle_o'_Enchanting.gif" width="50"> Garrafa de Encantamento</li>
+                            <li class="list-group-item"><img src="../img/Bow_JE2_BE1.png" width="50"> Arco</li>  
+                            <li class="list-group-item"><img src="../img/End_Crystal_JE2.gif" width="50"> Cristal do Fim</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h4 class="text-success">Itens com uso no mundo</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item"><img src="../img/Compass_JE3_BE3.gif" width="50"> Bússola</li>
+                            <li class="list-group-item"><img src="../img/Enchanted_Netherite_Sword.gif" width="50"> Espada Netherita</li>
+                            <li class="list-group-item"><img src="../img/Enchanted_Mace.gif" width="50"> Maça</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h4 class="text-success">Itens com uso indireto no mundo</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item"><img src="../img/Clock_JE3_BE3.gif" width="50"> Relógio</li>
+                            <li class="list-group-item"><img src="../img/Recovery_Compass_JE1_BE1.gif" width="50"> Bússola de recuperação</li>
+                            <li class="list-group-item"><img src="../img/Diamond_JE3_BE3.png" width="50"> Diamante</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h4 class="text-success">Ovos de geracao</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item"><img src="../img/Creeper_Spawn_Egg_JE3_BE2.png" width="50"> Ovo de geracao do Creeper</li>
+                            <li class="list-group-item"><img src="../img/Ender_Dragon_Spawn_Egg_JE3_BE2.png" width="50"> Ovo do dragão do ender</li>
+                            <li class="list-group-item"><img src="../img/Parrot_Spawn_Egg_JE2_BE2.png" width="50"> Ovo de geracao do papagaio</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="notas" class="py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-success">Notas</h2>
+                    <ol>
+                        <li>Existe apenas como um item separado em Edição Bedrock. Em Edição Java, bússolas de magnetita são apenas bússolas comuns com dados armazenados.</li>
+                    </ol>
+                    </div>
+            </div>
+        </div>
+        </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
