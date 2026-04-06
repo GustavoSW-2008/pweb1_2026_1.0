@@ -1,0 +1,40 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    border-bottom: 4px solid #388e3c; /* Verde Minecraft */
+}
+
+#sidebar {
+    min-height: calc(100vh - 56px);
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+#sidebar .nav-link {
+    color: #333;
+    font-weight: 500;
+}
+
+#sidebar .nav-link.active {
+    color: #388e3c;
+}
+
+.card {
+    border: 2px solid #ddd;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    border-color: #388e3c;
+}
+
+/* Títulos com estilo de jogo */
+h1, h2, h3 {
+    color: #2e7d32;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
