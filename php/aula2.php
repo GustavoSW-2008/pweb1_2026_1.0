@@ -11,3 +11,4 @@ foreach ($pessoas as $key => $item) {
     $idade = $item["idade"];
     echo"indice: $key Nome: $nome Idade: $idade <br>";
 }
+
